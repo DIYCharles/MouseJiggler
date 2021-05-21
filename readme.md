@@ -3,7 +3,7 @@ MouseJiggler
 
 This is a build of a HID emulating device that will continuously move the mouse to keep the computer from sleeping as well as preserve the online status of applications. It uses an Arduino Pro Micro and QMK Firmware 
 
-![alt text](https://raw.githubusercontent.com/DIYCharles/MouseJiggler/master/photos/img1.jpg "img1.jpg")
+![alt text](https://raw.githubusercontent.com/DIYCharles/MouseJiggler/master/photos/img3.jpg "img3.jpg")
 
 
 Table of contents
@@ -36,7 +36,7 @@ Pretty simple wiring. I wired a switch to pins 9 and 6 that corespond to B5 and 
 #define MATRIX_ROW_PINS { B5 }
 #define MATRIX_COL_PINS { D7 }
 ```
-
+![alt text](https://raw.githubusercontent.com/DIYCharles/MouseJiggler/master/photos/img1.jpg "img1.jpg")
 
 QMK Firmware
 ============

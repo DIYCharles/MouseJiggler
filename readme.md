@@ -25,7 +25,7 @@ A: Some people do not have the ability to run scripts as cmd and powershell is b
 
 Q: Why not just buy a premade mouse mover usb dongle online? </br>
 
-A: All USB products have hardware identification parameters so they can show up as a suspect usb device. With this solution you can spoof all the device identification parameters and it is recognized as a generic keyboard. For all intensive purposes after it is flashed it is a keyboard and acts exactly like it. 
+A: All USB products have hardware identification parameters so they can show up as a suspect usb device. With this solution you can spoof all the device identification parameters and it is recognized as a generic keyboard. For all intents and purposes after it is flashed it is a keyboard and acts exactly like it. 
 
 
 Wiring

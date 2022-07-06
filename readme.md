@@ -75,6 +75,26 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 ```
+
+If you want the key to be a tap to toggle like if you are just using a keyboard replace the function above with this. It will invert the boolean mouse_jiggler_mode. 
+```c
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case MOUSEJIGGLERMACRO:
+      if (record->event.pressed) {
+        if (mouse_jiggle_mode) {
+            mouse_jiggle_mode = false;
+        } else {
+            mouse_jiggle_mode = true;
+        }
+      // SEND_STRING(SS_DELAY(100)); //uncomment if it switches too fast before the button debounces
+      } else {}
+      break;
+  }
+  return true;
+}
+```
+
 In this next part we piggyback onto a mostly unused function that scans the keyboard repetitively on a loop. We use this loop to read our value mouse_jiggle_mode and if true it runs a set of mouse and wheel movements. This continues until the switch is toggled.
 ```c
 void matrix_scan_user(void) {

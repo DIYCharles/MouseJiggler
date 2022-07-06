@@ -45,6 +45,26 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
+
+//if you want it to be a toggle switch with a key instead of a hold down function use this instead
+/*
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case MOUSEJIGGLERMACRO:
+      if (record->event.pressed) {
+        if (mouse_jiggle_mode) {
+            mouse_jiggle_mode = false;
+        } else {
+            mouse_jiggle_mode = true;
+        }
+      // SEND_STRING(SS_DELAY(100)); //uncomment if it switches too fast before the button debounces
+      } else {}
+      break;
+  }
+  return true;
+}
+*/
+
     /*    SEND_STRING("1");
     tap_code(KC_MS_BTN1);
     tap_code(KC_MS_BTN1);

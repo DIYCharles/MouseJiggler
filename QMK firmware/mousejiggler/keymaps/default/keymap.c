@@ -32,22 +32,22 @@ void matrix_scan_user(void) {
 }
 
 
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-  switch (keycode) {
-    case MOUSEJIGGLERMACRO:
-      if (record->event.pressed) {
-        mouse_jiggle_mode = true;
-      } else {
-        mouse_jiggle_mode = false;
-      }
-      break;
-  }
-  return true;
-}
+// bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+//   switch (keycode) {
+//     case MOUSEJIGGLERMACRO:
+//       if (record->event.pressed) {
+//         mouse_jiggle_mode = true;
+//       } else {
+//         mouse_jiggle_mode = false;
+//       }
+//       break;
+//   }
+//   return true;
+// }
 
 
 //if you want it to be a toggle switch with a key instead of a hold down function use this instead
-/*
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case MOUSEJIGGLERMACRO:
